@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CreateRecipiesComponent } from './Recipes/create-recipies/create-recipies.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CreateRecipiesComponent
   ],
   imports: [
     BrowserModule,

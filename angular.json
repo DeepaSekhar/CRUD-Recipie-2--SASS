@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Recipie-CRUD-SASS"
+    }
+  },
+  "defaultProject": "Recipie-CRUD-SASS",
+  "cli": {
+    "analytics": false
+  }
 }
