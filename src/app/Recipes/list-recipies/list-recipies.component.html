@@ -1,1 +1,15 @@
-<p>list-recipies works!</p>
+<div class="container">
+  <div class="card" *ngFor="let recipe of recipes">
+    <div class="heading">
+      <h2 class="card-title">{{ recipe.name }}</h2>
+    </div>
+
+    <div class="card-image">
+      <img class="image" [src]="recipe.photo" />
+    </div>
+
+    <div class="card-description">
+      <h5 class="description">{{ recipe.description }}</h5>
+    </div>
+  </div>
+</div>

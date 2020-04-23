@@ -8,10 +8,19 @@ import { Recipe } from "../../models/recipie.model"
 })
 export class ListRecipiesComponent implements OnInit {
   recipe: Recipe
-  id: string;
+  id: number;
   name: string;
   photo: string;
   description: string
+  recipes: Recipe[] = [
+    {
+      id: 1,
+      name: "Thali",
+      photo: "assets/images/thali.jpg",
+      description: "south indian dish"
+    }
+
+  ]
 
   constructor() { }
 
