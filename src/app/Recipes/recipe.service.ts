@@ -12,9 +12,16 @@ export class RecipeService {
         return this.listRecipe;
     }
     save(recipe: Recipe): void {
-        this.listRecipe.push(recipe)
+        const dish = {
+            ...recipe,
+            id: this.listRecipe.length + 1
+
+        }
+        console.log("dish", dish)
+        this.listRecipe.push(dish);
 
     }
+
 }
 
 

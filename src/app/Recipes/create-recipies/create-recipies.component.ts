@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Recipe } from "../../models/recipie.model"
 import { RecipeService } from "../recipe.service"
-
+import { NgForm } from "@angular/forms"
 @Component({
   selector: 'app-create-recipies',
   templateUrl: './create-recipies.component.html',
@@ -9,8 +9,8 @@ import { RecipeService } from "../recipe.service"
 })
 
 export class CreateRecipiesComponent implements OnInit {
-  recipe: Recipe
-  recipes: Recipe[]
+
+
   id: number;
   name: string;
   photo: string;
@@ -21,7 +21,17 @@ export class CreateRecipiesComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  saveRecipie(recipe: Recipe) {
-    console.log(recipe);
+  saveRecipe() {
+    const createRecipe = {
+
+      id: null,
+      name: this.name,
+      photo: this.photo,
+      description: this.description
+    }
+
+    this.recipeService.save(createRecipe);
+
   }
+
 }

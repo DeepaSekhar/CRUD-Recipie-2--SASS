@@ -1,1 +1,48 @@
-<p>create-recipies works!</p>
+<form #recipeForm="ngForm" (ngSubmit)="saveRecipe()">
+  <div class="conatainer">
+    <div class="heading">
+      <h1>Add a new Recipe</h1>
+    </div>
+    <!-- name -->
+    <div class="form-group">
+      <label for="name"> Name</label>
+      <input
+        type="text"
+        class="form-control input-field"
+        id="name"
+        required
+        [(ngModel)]="name"
+        name="name"
+      />
+    </div>
+    <!-- photo -->
+    <div class="form-group">
+      <label for="photo">Photo</label>
+      <input
+        type="text"
+        [(ngModel)]="photo"
+        class="form-control"
+        id="photo"
+        name="photo"
+        required
+      />
+    </div>
+    <!-- description -->
+    <div class="form-group">
+      <label for="Description"> Description</label>
+      <input
+        type="text"
+        [(ngModel)]="description"
+        class="form-control"
+        id="description"
+        name="description"
+        required
+      />
+    </div>
+    <div class="button">
+      <button type="submit">
+        Save
+      </button>
+    </div>
+  </div>
+</form>
