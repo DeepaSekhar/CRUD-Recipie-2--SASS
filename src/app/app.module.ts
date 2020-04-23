@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component'
-import { recipeService } from "./Recipes/recipe.service"
+import { RecipeService } from "./Recipes/recipe.service"
 import { ListRecipiesComponent } from './Recipes/list-recipies/list-recipies.component';
 import { CreateRecipiesComponent } from './Recipes/create-recipies/create-recipies.component';
 
@@ -17,7 +17,7 @@ import { CreateRecipiesComponent } from './Recipes/create-recipies/create-recipi
 
   ],
   providers: [
-    recipeService
+    RecipeService
   ],
   bootstrap: [AppComponent]
 })

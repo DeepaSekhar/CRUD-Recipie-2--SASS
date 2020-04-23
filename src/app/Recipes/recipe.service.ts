@@ -1,5 +1,5 @@
 import { Recipe } from "../models/recipie.model"
-export class recipeService {
+export class RecipeService {
     private listRecipe: Recipe[] = [
         {
             id: 1,
