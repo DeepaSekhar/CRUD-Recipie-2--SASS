@@ -11,7 +11,10 @@ export class RecipeService {
     getRecipe(): Recipe[] {
         return this.listRecipe;
     }
+    save(recipe: Recipe): void {
+        this.listRecipe.push(recipe)
 
+    }
 }
 
 
