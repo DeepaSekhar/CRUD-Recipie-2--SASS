@@ -12,15 +12,7 @@ export class ListRecipiesComponent implements OnInit {
   name: string;
   photo: string;
   description: string
-  recipes: Recipe[] = [
-    {
-      id: 1,
-      name: "Thali",
-      photo: "assets/images/thali.jpg",
-      description: "south indian dish"
-    }
-
-  ]
+  recipes: Recipe[]
 
   constructor() { }
 

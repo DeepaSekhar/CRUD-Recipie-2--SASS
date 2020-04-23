@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component'
+import { recipeService } from "./Recipes/recipe.service"
 import { ListRecipiesComponent } from './Recipes/list-recipies/list-recipies.component';
 import { CreateRecipiesComponent } from './Recipes/create-recipies/create-recipies.component';
 
@@ -8,13 +9,16 @@ import { CreateRecipiesComponent } from './Recipes/create-recipies/create-recipi
   declarations: [
     AppComponent,
     ListRecipiesComponent,
-    CreateRecipiesComponent
+    CreateRecipiesComponent,
+
   ],
   imports: [
     BrowserModule,
 
   ],
-  providers: [],
+  providers: [
+    recipeService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
