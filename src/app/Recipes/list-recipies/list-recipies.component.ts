@@ -21,5 +21,7 @@ export class ListRecipiesComponent implements OnInit {
   ngOnInit(): void {
     this.recipes = this.recipeService.getRecipe();
   }
-
+  deleteRecipe(recipe: Recipe) {
+    this.recipeService.deleteRecipe(recipe.id);
+  }
 }
